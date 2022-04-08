@@ -29,12 +29,25 @@ $ git clone https://github.com/Vatxr/Skript/Projects/Bloodwork.sk
 KitINV Skript allows usage of GUI that provides the player with obtainable kits which is opened as the player uses /kit.
 
 ***Information:***<br>
-- Project Name: ServerBanner <br>
+- Project Name: KitINV <br>
 - Supported Minecraft Versions: 1.16 +  <br>
 - Needed skript addons: N/A
 - Download git clone:
 ```
 $ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
+```
+## 🛡️AuthorisedChat Script [SOON]
+AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communicate with each other privatly with being **logged**.
+
+*Next Update*: Loggable to discord; Means staffchat can be previewed & interacted with via discord.
+
+***Information:***<br>
+- Project Name: AuthChat <br>
+- Supported Minecraft Versions: 1.16 +  <br>
+- Needed skript addons: N/A
+- Download git clone:
+```
+$ git clone https://github.com/Vatxr/Skript/Projects/AuthChat.sk
 ```
 ## 🚩ServerBanner Script [SOON]
 Serverbanner Skript that allows to customize tablist and much more!
