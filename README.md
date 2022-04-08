@@ -12,7 +12,7 @@ $ git clone https://github.com/Vatxr/Skript
 However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk
 
 ## 🩸Bloodwork Script [SOON]
-Bloodwork script that intreduces the blood concept to minecraft!<br>
+Bloodwork script that introduces the blood concept to minecraft! <br>
 
 ***Information:***<br>
 - Project Name: Bloodwork <br>
