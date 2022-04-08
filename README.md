@@ -9,7 +9,7 @@ A github repo with all my Minecraft Skript Projects.
 ```
 $ git clone https://github.com/Vatxr/Skript
 ```
-However, if you wish to download a certain skript project, you could add after /Skript this /{ProjectName}.sk
+However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk
 
 ## 🩸Bloodwork Script
 Project Name: Bloodwork <br>
