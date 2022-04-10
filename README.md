@@ -11,20 +11,6 @@ $ git clone https://github.com/Vatxr/Skript
 ```
 However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk
 
-## 🩸Bloodwork Script [SOON]
-Bloodwork script, my biggest skript project yet, introduces the blood concept to minecraft! <br>
-
-***Note**: This script will be maintained and updated along the way of it's groth! Make sure you're downloading the latest release!<br>
-Bug Reports are supported for this skript.*
-
-***Information:***<br>
-- Project Name: Bloodwork <br>
-- Supported Minecraft Versions: 1.16 +  <br>
-- Needed skript addons: N/A
-- Download git clone:
-```
-$ git clone https://github.com/Vatxr/Skript/Projects/Bloodwork.sk
-```
 ## 🗃️ KitINV Script [SOON]
 KitINV Skript allows usage of GUI that provides the player with obtainable kits which is opened as the player uses /kit.
 
