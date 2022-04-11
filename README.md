@@ -11,17 +11,6 @@ $ git clone https://github.com/Vatxr/Skript
 ```
 However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk
 
-## 🗃️ KitINV Script [SOON]
-KitINV Skript allows usage of GUI that provides the player with obtainable kits which is opened as the player uses /kit.
-
-***Information:***<br>
-- Project Name: KitINV <br>
-- Supported Minecraft Versions: 1.16 +  <br>
-- Needed skript addons: N/A
-- Download git clone:
-```
-$ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
-```
 ## 🛡️AuthorisedChat Script
 AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communicate with each other privatly with being **logged**.
 
@@ -41,6 +30,19 @@ AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communic
 ```
 $ git clone https://github.com/Vatxr/Skript/Projects/AuthChat.sk
 ```
+
+## 🗃️ KitINV Script [SOON]
+KitINV Skript allows usage of GUI that provides the player with obtainable kits which is opened as the player uses /kit.
+
+***Information:***<br>
+- Project Name: KitINV <br>
+- Supported Minecraft Versions: 1.16 +  <br>
+- Needed skript addons: N/A
+- Download git clone:
+```
+$ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
+```
+
 ## 🚩ServerBanner Script [SOON]
 Serverbanner Skript that allows to customize tablist and much more!
 
