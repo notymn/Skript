@@ -8,8 +8,8 @@ A github repo with all my Minecraft Skript Projects.
 - KitINV
 - SexyECO
 + AuthChat 1.0.0
-+ ServerBanner 1.0.0
-+ ModeGUI 1.0.2
+- ServerBanner
++ ModeGUI 1.0.1
 
 Note:
 Red: In-Development (un-released)
