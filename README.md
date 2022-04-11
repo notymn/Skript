@@ -9,23 +9,25 @@ A github repo with all my Minecraft Skript Projects.
 ```
 $ git clone https://github.com/Vatxr/Skript
 ```
-However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk
+However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk<br><br>
+*NOTE: This Readme.md will only contain maintained skript projects! Other skripts will be documented within the code.*
 
 ## 🛡️AuthorisedChat Script
 AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communicate with each other privatly with being **logged**.
-
-*Next Update*: Loggable to discord; Means staffchat can be previewed & interacted with via discord.
+<br><br>
+*Next Update*: Loggable to discord; Means channels (staff chat,ect.) can be previewed & interacted with via discord.
 
 ***Information:***<br>
 - Project Name: AuthChat <br>
-- Supported Minecraft Versions: 1.8 +  <br>
+- Supported Minecraft Versions: 1.8 +  [Range: 1.8 - 1.16]<br>
+- Needed skript addons: NONE
+- Tested Versions: 1.8
 - Commands: 
 ```
 /achat - Main command
 /sc [<msg>] - Staff Chat
 /ac [<msg>] - Admin Chat
 ```
-- Needed skript addons: NONE
 - Download git clone:
 ```
 $ git clone https://github.com/Vatxr/Skript/Projects/AuthorisedChat.sk
@@ -43,14 +45,6 @@ KitINV Skript allows usage of GUI that provides the player with obtainable kits 
 $ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
 ```
 
-## 🚩ServerBanner Script [SOON]
-Serverbanner Skript that allows to customize tablist and much more!
+## 💸SexyEco Script [SOON]
 
-***Information:***<br>
-- Project Name: ServerBanner <br>
-- Supported Minecraft Versions: 1.16 +  <br>
-- Needed skript addons: N/A
-- Download git clone:
-```
-$ git clone https://github.com/Vatxr/Skript/Projects/ServerBanner.sk
-```
+This Skript Project will begin development after KitINV is released! (The biggest project I'm personally working on!)
