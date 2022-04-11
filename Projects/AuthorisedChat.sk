@@ -21,7 +21,7 @@ command /achat: # Making the command
         send "&8⁕&b Author&8: &cVatxr "
         send "&8⁕&b Version&8: &c1.0.0 &7(first version)"
         send "&8⁕&b Commands: /sc & /ac"
-       send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
+        send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
         
         
 # Staff Chat
