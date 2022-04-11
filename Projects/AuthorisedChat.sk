@@ -9,6 +9,21 @@
 # Variables
 prefix: "&7[&c&lAut&4&lChat&7]"
 
+# Main command
+
+command /achat: # Making the command
+# Permissions
+# to enable permessions for this command un comment the following:
+#    permession: authchat.help
+#    permession message: &7[&c&lAut&4&lChat&7] &cYou must be a &lstaff member&c to use this!
+    trigger:
+        send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
+        send "&8⁕&b Author&8: &cVatxr "
+        send "&8⁕&b Version&8: &c1.0.0 &7(first version)"
+        send "&8⁕&b Commands: /sc & /ac"
+       send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
+        
+        
 # Staff Chat
 
 command /sc [<text>]: # Making the command
