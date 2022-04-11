@@ -28,7 +28,7 @@ AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communic
 - Needed skript addons: NONE
 - Download git clone:
 ```
-$ git clone https://github.com/Vatxr/Skript/Projects/AuthChat.sk
+$ git clone https://github.com/Vatxr/Skript/Projects/AuthorisedChat.sk
 ```
 
 ## 🗃️ KitINV Script [SOON]
