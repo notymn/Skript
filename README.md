@@ -22,15 +22,21 @@ KitINV Skript allows usage of GUI that provides the player with obtainable kits 
 ```
 $ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
 ```
-## 🛡️AuthorisedChat Script [SOON]
+## 🛡️AuthorisedChat Script
 AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communicate with each other privatly with being **logged**.
 
 *Next Update*: Loggable to discord; Means staffchat can be previewed & interacted with via discord.
 
 ***Information:***<br>
 - Project Name: AuthChat <br>
-- Supported Minecraft Versions: 1.16 +  <br>
-- Needed skript addons: N/A
+- Supported Minecraft Versions: 1.8 +  <br>
+- Commands: 
+```
+/achat
+/sc
+/ac
+```
+- Needed skript addons: NONE
 - Download git clone:
 ```
 $ git clone https://github.com/Vatxr/Skript/Projects/AuthChat.sk
