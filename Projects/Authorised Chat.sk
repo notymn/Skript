@@ -1,0 +1,52 @@
+##############################################################################
+## Author: Vatxr                                                            ##
+## Script Version: 1.0.0, Founded 4/11/2022 (DD/MM/YYYY)                    ##
+## Script owned by BotNot Creations                                         ##
+## Minecraft Version: 1.8 - 1.16                                            ##
+## Tested Minecraft Versions: 1.8 [theoriticly, other versions should work] ##
+##############################################################################
+
+# Variables
+prefix: "&7[&c&lAut&4&lChat&7]"
+
+# Staff Chat
+
+command /sc [<text>]: # Making the command
+# Permisions 
+    permission: authchat.staff
+    permission message: &7[&c&lAut&4&lChat&7] &cYou must be a &lstaff member&c to use this!
+# functions:
+    trigger:
+        if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
+            send "%prefix% &cUsage: /sc <message>"
+        if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
+            if player is not set: # Checking if it's a console
+                set {player} to "Administrator"
+            else: 
+                set {player} to player
+            send "(AuthChat LOG for Staff Chat) %player's prefix% %player% %player's suffix%: %arg 1%" to console
+            loop all players:
+                if loop-player has permission "authchat.staff": # Checking who's got the permessions to view the chat
+                    send "&7(&cSC&7) %player's prefix% %player% %player's suffix%&f: &c%arg 1%" to loop-player
+
+command /ac [<text>]: # Making the command
+# Permisions 
+    permission: authchat.admin
+    permission message: &7[&c&lAut&4&lChat&7] &cYou must be a &lstaff member&c to use this!
+# functions:
+    trigger:
+        if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
+            send "%prefix% &cUsage: /ac <message>"
+        if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
+            if player is not set: # Checking if it's a console
+                set {player} to "Administrator" # Giving console a name
+            else: 
+                set {player} to player 
+            send "(AuthChat LOG for Admin Chat) %player's prefix% %player% %player's suffix%: %arg 1%" to console
+            loop all players:
+                if loop-player has permission "authchat.staff": # Checking who's got the permessions to view the chat
+                    send "&7(&4AC&7) %player's prefix% %player% %player's suffix%&f: &4%arg 1%" to loop-player
+
+# END; You could use this format to create other "channels". 
+# If you wish to remove "LOGGING", which in the future will be used to log to discord channels:
+# remove "send "... LOG for ..." to console, (found in lines 27 & 45)
