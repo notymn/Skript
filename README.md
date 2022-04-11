@@ -32,9 +32,9 @@ AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communic
 - Supported Minecraft Versions: 1.8 +  <br>
 - Commands: 
 ```
-/achat
-/sc
-/ac
+/achat - Main command
+/sc [<msg>] - Staff Chat
+/ac [<msg>] - Admin Chat
 ```
 - Needed skript addons: NONE
 - Download git clone:
