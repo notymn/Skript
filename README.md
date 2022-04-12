@@ -7,7 +7,7 @@ A github repo with all my Minecraft Skript Projects.
 ```diff
 - KitINV
 - SexyECO
-+ AuthChat 1.0.0
++ AuthChat 1.0.1
 - ServerBanner
 + ModeGUI 1.0.1
 
