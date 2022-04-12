@@ -1,15 +1,29 @@
 ##############################################################################
 ## Author: Vatxr                                                            ##
-## Script Version: 1.0.0, Founded 4/11/2022 (DD/MM/YYYY)                    ##
+## Script Version: 1.0.1, Founded 4/11/2022 (DD/MM/YYYY)                    ##
 ## Script owned by BotNot Creations                                         ##
 ## Minecraft Version: 1.8 - 1.16                                            ##
 ## Tested Minecraft Versions: 1.8 [theoriticly, other versions should work] ##
 ##############################################################################
 
-# Variables
-prefix: "&7[&c&lAut&4&lChat&7]"
+# Version INFORMATION:
+# - Patched a total of 3 bugs.
+# - Discord INT has started development (this version doesn't contain any of the skript for this feature yet)
 
-# Main command
+# WARNING!
+# Don't change/edit the code if you're not aware of what you're actions do.
+
+############################ Config ##############################
+options:
+    prefix: "&7[&c&lAut&4&lChat&7]" #Not Required
+    discordtk: "" # Required if you wish to use Discord INT. (Feature isn't usable as of for this version) 
+    discordsChatID: "" # Required if you wish to use Discord INT. ^
+    discordaChatID: "" # Required if you wish to use Discord INT. ^
+
+####################### Discord Channel INT #######################
+# soon
+
+########################### Main command ##########################
 
 command /achat: # Making the command
 # Permissions
@@ -17,14 +31,15 @@ command /achat: # Making the command
 #    permession: authchat.help
 #    permession message: &7[&c&lAut&4&lChat&7] &cYou must be a &lstaff member&c to use this!
     trigger:
-        send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
-        send "&8⁕&b Author&8: &cVatxr "
-        send "&8⁕&b Version&8: &c1.0.0 &7(first version)"
-        send "&8⁕&b Commands: /sc & /ac"
-        send "&8&l-----------+ &c&lAuthChat&8&l +-----------"
-        
-        
-# Staff Chat
+        send "&8&l-----------+ &c&lAuthChat&8&l +-----------" to player
+        send "&8⁕&b Author&8: &cVatxr" to player
+        send "&8⁕&b Version&8: &c1.0.0 &7(first version)" to player
+        send "&8⁕&b Commands&8: " to player
+        send "&8> &b/sc {&cmessage&b}&7 - For &cStaffChat" to player
+        send "&8> &b/ac {&cmessage&b}&7 - For &4AdminChat" to player
+        send "&8&l-----------+ &c&lAuthChat&8&l +-----------" to player
+
+############################### Chat ##############################
 
 command /sc [<text>]: # Making the command
 # Permisions 
@@ -33,7 +48,7 @@ command /sc [<text>]: # Making the command
 # functions:
     trigger:
         if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
-            send "%prefix% &cUsage: /sc <message>"
+            send "{%prefix%} &cUsage: /sc <message>" to player
         if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
             if player is not set: # Checking if it's a console
                 set {player} to "Administrator"
@@ -51,7 +66,7 @@ command /ac [<text>]: # Making the command
 # functions:
     trigger:
         if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
-            send "%prefix% &cUsage: /ac <message>"
+            send "{%prefix%} &cUsage: /ac <message>" to player
         if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
             if player is not set: # Checking if it's a console
                 set {player} to "Administrator" # Giving console a name
@@ -62,6 +77,6 @@ command /ac [<text>]: # Making the command
                 if loop-player has permission "authchat.staff": # Checking who's got the permessions to view the chat
                     send "&7(&4AC&7) %player's prefix% %player% %player's suffix%&f: &4%arg 1%" to loop-player
 
-# END; You could use this format to create other "channels". 
+# END!
 # If you wish to remove "LOGGING", which in the future will be used to log to discord channels:
 # remove "send "... LOG for ..." to console, (found in lines 27 & 45)
