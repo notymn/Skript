@@ -1,1 +1,86 @@
-# SOON
+#================================» Mode GUI «================================#
+# Author: Vatxr
+# GitHub: https://github.com/Vatxr/Skript 
+
+#==============================» Main Command «==============================#
+# This Skript will have 7 Pre-Made modes! /modes will display them all. 
+# Every other mode has it's own permission node.
+# Commands:
+# /modes - Opens a GUI with the modes according to the player's permissions.
+# /mver - Shows Version
+
+command /mode: 
+    permission: mode.ver
+    permission message: &b&lModes&8 »&c You can't use this command!
+    trigger: 
+        send "&8&l------------------+ &b&lModes &8&l+------------------" to player
+        send "&8&l»&b Author: Vatxr" to player
+        send "&8&l»&b Github: https://github.com/Vatxr/Skript" to player
+        send "&8&l»&b Running version &71.1.0&b!" to player
+        send "&8&l»&b &aTo start use &7/modes&a!" to player
+        send "&8&l------------------+ &b&lModes &8&l+------------------" to player
+
+command /modes:
+    permission: mode.gui
+    permission message: &b&lModes&8 »&c You can't use this command!
+    trigger:
+        if player has permission "duty.mode.gui":
+            set metadata tag "Modes" of player to chest inventory with 1 rows named "&3&lCustom &b&lModes"
+            set slot 4 of metadata tag "Modes" of player to diamond sword of unbreaking 1 named "&4&lDuty &c&lMode" with lore "&7Click to &aenable&4&l Duty Mode&7!"
+            open (metadata tag "Modes" of player) to player
+
+on inventory click:
+    if event-inventory = (metadata tag "Modes" of player):
+        cancel event
+        if index of event-slot is 4:
+            make player execute "/duty enable"
+            close player's inventory
+
+#==============================» Duty System «===============================#
+# This feature has it's own perm node "duty.enable", you can link it to any feature you wish!
+# if player leaves the server and has /duty enable, it disables it.
+# Commands:
+# /duty <enable/disable> - enables/disabled staff duty mode! 
+
+command /duty [<text>]:
+    permission: duty.mode.gui
+    permission message: &c&lDuty&8 »&c You can't use this command!
+    trigger:
+        if player has permission "duty.enable":
+            if arg 1 is not set:
+                send "&c&lDuty&8 »&c Usage: /duty <enable/disable>" to player
+                stop
+            if arg 1 is "enable": 
+                send "&c&lDuty&8 »&a You're already in this mode!" to player
+                stop
+            if arg 1 is "disable":
+                make console execute "/bc &a%player%&c Has quit their duty!"
+                make console execute "/lp user %player% permission set duty.enable false"
+                stop
+            else:
+                send "&c&lDuty&8 »&c usage: /duty <enable/disable>" to player
+        else:
+            if arg 1 is "enable":
+                make console execute "/bc &a%player%&c Has started their duty!"
+                make console execute "/lp user %player% permission set duty.enable true"
+                make console execute "/god %player% disable"
+                make console execute "/fly %player% disable"
+                stop
+
+on join: 
+    if player has permission "duty.enable":
+        wait 3 seconds
+        send "&c&lDuty&8 » &4&lNOTICE: &a&lYou've logged out with duty enabled!" to player
+        wait 0.5 seconds
+        send "&c&lDuty&8 » &aDisable Process.."
+        wait 0.25 seconds
+        make player execute "/duty disable"
+
+#==============================» Message of Death «===============================#
+# End of skript!
+# view more skripts @ https://github.com/Vatxr/Skript 
+
+# BIG thanks to TrafPlays for helping me patch some bugs!
+# https://github.com/TrafPlays
+
+
