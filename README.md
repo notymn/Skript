@@ -9,7 +9,7 @@ A github repo with all my Minecraft Skript Projects.
 - SexyECO
 - ServerBanner
 + AuthChat 1.0.1
-+ ModeGUI 1.0.0
++ ModeGUI 1.1.0
 
 Note:
 Red: In-Development (un-released)
