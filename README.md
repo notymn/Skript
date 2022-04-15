@@ -27,6 +27,11 @@ However, if you wish to download a certain skript project, you could add after /
 ## 🛡️AuthorisedChat Script
 AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communicate with each other privatly with being **logged**.
 <br><br>
+
+### Change Log:
+- Patched bugs with nicks not showing while using /sc & /ac
+- Patched /achat not working, Also renamed it to /authchat.
+
 *Next Update*: Loggable to discord; Means channels (staff chat,ect.) can be previewed & interacted with via discord.
 
 ***Information:***<br>
