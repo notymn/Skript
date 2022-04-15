@@ -7,15 +7,14 @@
 ##############################################################################
 
 # Version INFORMATION:
-# - Patched a total of 3 bugs.
+# - Patched total of 3 bugs.
 # - Discord INT has started development (this version doesn't contain any of the skript for this feature yet)
 
 # WARNING!
 # Don't change/edit the code if you're not aware of what you're actions do.
 
-############################ Config ##############################
+# Config
 options:
-    prefix: "&7[&c&lAut&4&lChat&7]" #Not Required
     discordtk: "" # Required if you wish to use Discord INT. (Feature isn't usable as of for this version) 
     discordsChatID: "" # Required if you wish to use Discord INT. ^
     discordaChatID: "" # Required if you wish to use Discord INT. ^
@@ -48,13 +47,13 @@ command /sc [<text>]: # Making the command
 # functions:
     trigger:
         if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
-            send "{%prefix%} &cUsage: /sc <message>" to player
+            send "{@prefix} &cUsage: /sc <message>" to player
         if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
             if player is not set: # Checking if it's a console
                 set {player} to "Administrator"
             else: 
                 set {player} to player
-            send "(AuthChat LOG for Staff Chat) %player's prefix% %player% %player's suffix%: %arg 1%" to console
+            send "(AuthChat LOG for Staff Chat) %player's prefix% %player's display name%: %arg 1%" to console
             loop all players:
                 if loop-player has permission "authchat.staff": # Checking who's got the permessions to view the chat
                     send "&7(&cSC&7) %player's prefix% %player% %player's suffix%&f: &c%arg 1%" to loop-player
@@ -66,7 +65,7 @@ command /ac [<text>]: # Making the command
 # functions:
     trigger:
         if arg 1 is not set: # if "[<text>]" (arg 1) is not set, tell them what to do.
-            send "{%prefix%} &cUsage: /ac <message>" to player
+            send "{@prefix} &cUsage: /ac <message>" to player
         if arg 1 is set: # if "[<text>]" (arg 1) is set, start checking if the player is online or not. (console or not)
             if player is not set: # Checking if it's a console
                 set {player} to "Administrator" # Giving console a name
