@@ -19,7 +19,7 @@ Green: Released, Version
 1) Make sure you've got skript 1.16 install on your minecraft server.
 2) Open command prompt and type:
 ```
-$ git clone https://github.com/Vatxr/Skript
+$ git clone https://github.com/y4mn/Skript
 ```
 However, if you wish to download a certain skript project, you could add after /Skript this /Project/{ProjectName}.sk<br><br>
 *NOTE: This Readme.md will only contain maintained skript projects! Other skripts will be documented within the code.*
@@ -47,7 +47,7 @@ AuthorisedChat Skript allows authorised members (Staff, Admins, ECT) to communic
 ```
 - Download git clone:
 ```
-$ git clone https://github.com/Vatxr/Skript/Projects/AuthorisedChat.sk
+$ git clone https://github.com/y4mn/Skript/Projects/AuthorisedChat.sk
 ```
 
 ## 🗃️ KitINV Script [SOON]
@@ -59,7 +59,7 @@ KitINV Skript allows usage of GUI that provides the player with obtainable kits 
 - Needed skript addons: N/A
 - Download git clone:
 ```
-$ git clone https://github.com/Vatxr/Skript/Projects/KitINV.sk
+$ git clone https://github.com/y4mn/Skript/Projects/KitINV.sk
 ```
 
 ## 💸SexyEco Script [SOON]
